@@ -1,0 +1,56 @@
+.tracking-cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-base);
+}
+
+.tracking-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.tracking-card:hover {
+  border-color: var(--color-primary-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.tracking-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-sm);
+}
+
+.tracking-card-id {
+  font-weight: var(--fw-medium);
+  color: var(--color-text-dark);
+  font-size: var(--fs-base);
+}
+
+.tracking-card-info {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-base);
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+}
+
+.tracking-card-timeline {
+  margin-top: var(--space-md);
+}
+
+.tracking-card-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--space-sm);
+}
+
+.tracking-card-labels span {
+  font-size: 10px;
+  color: var(--color-text-muted);
+}

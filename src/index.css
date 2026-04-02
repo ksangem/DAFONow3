@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import './styles/design-tokens.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-base);
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text-dark);
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: var(--fs-4xl);
+  font-weight: var(--fw-bold);
+}
+
+h2 {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-semibold);
+}
+
+h3 {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+}
+
+h4 {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-primary-light);
+}
+
+button {
+  font-family: var(--font-family);
+  cursor: pointer;
+}
+
+input, select, textarea {
+  font-family: var(--font-family);
+  font-size: var(--fs-base);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}

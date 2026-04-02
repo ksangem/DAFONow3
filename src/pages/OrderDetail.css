@@ -1,0 +1,124 @@
+.order-detail-back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-lg);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.order-detail-back:hover {
+  color: var(--color-primary);
+}
+
+.order-detail-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-2xl);
+}
+
+.order-detail-header h1 {
+  font-size: var(--fs-3xl);
+  margin-bottom: var(--space-xs);
+}
+
+.order-detail-header .order-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-base);
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
+.order-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: var(--space-xl);
+}
+
+.order-detail-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.order-detail-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.order-specs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-base);
+}
+
+.order-spec-item {
+  padding: var(--space-md) 0;
+}
+
+.order-spec-label {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.order-spec-value {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-medium);
+  color: var(--color-text-dark);
+}
+
+.patient-sidebar-card {
+  text-align: center;
+}
+
+.patient-sidebar-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-primary-bg);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  margin: 0 auto var(--space-md);
+}
+
+.patient-sidebar-name {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  color: var(--color-text-dark);
+  margin-bottom: 2px;
+}
+
+.patient-sidebar-id {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-base);
+}
+
+.patient-sidebar-detail {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-sm) 0;
+  border-top: 1px solid var(--color-border);
+  font-size: var(--fs-sm);
+}
+
+.patient-sidebar-detail span:first-child {
+  color: var(--color-text-muted);
+}
+
+.patient-sidebar-detail span:last-child {
+  font-weight: var(--fw-medium);
+  color: var(--color-text-dark);
+}

@@ -1,0 +1,196 @@
+.new-order-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-2xl);
+  padding: var(--space-xl) 0;
+}
+
+.new-order-step-indicator {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.new-order-step-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  border: 2px solid var(--color-border);
+  color: var(--color-text-muted);
+  background: var(--color-surface);
+  transition: all var(--transition-base);
+}
+
+.new-order-step-dot.active {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  color: white;
+}
+
+.new-order-step-dot.completed {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  color: white;
+}
+
+.new-order-step-label {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--color-text-muted);
+  transition: color var(--transition-base);
+}
+
+.new-order-step-label.active {
+  color: var(--color-primary);
+  font-weight: var(--fw-semibold);
+}
+
+.new-order-step-label.completed {
+  color: var(--color-text-dark);
+}
+
+.new-order-step-connector {
+  width: 40px;
+  height: 2px;
+  background: var(--color-border);
+  margin: 0 var(--space-xs);
+  transition: background var(--transition-base);
+}
+
+.new-order-step-connector.completed {
+  background: var(--color-primary);
+}
+
+.new-order-content {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.new-order-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.new-order-footer-right {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+/* Product Selection */
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.product-option {
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.product-option:hover {
+  border-color: var(--color-primary-light);
+}
+
+.product-option.selected {
+  border-color: var(--color-primary);
+  background: var(--color-primary-bg);
+}
+
+.product-option-name {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-dark);
+  margin-bottom: 4px;
+}
+
+.product-option-category {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.product-option-desc {
+  font-size: var(--fs-sm);
+  color: var(--color-text-primary);
+  line-height: 1.4;
+}
+
+/* Review Section */
+.review-section {
+  margin-bottom: var(--space-xl);
+}
+
+.review-section h4 {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-dark);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.review-row {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-sm) 0;
+  font-size: var(--fs-base);
+}
+
+.review-row span:first-child {
+  color: var(--color-text-muted);
+}
+
+.review-row span:last-child {
+  font-weight: var(--fw-medium);
+  color: var(--color-text-dark);
+}
+
+/* Success Screen */
+.success-screen {
+  text-align: center;
+  padding: var(--space-4xl) 0;
+}
+
+.success-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #EDF7E8;
+  color: var(--color-success-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-xl);
+}
+
+.success-screen h2 {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--space-sm);
+}
+
+.success-screen p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-2xl);
+}
+
+.success-actions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+}

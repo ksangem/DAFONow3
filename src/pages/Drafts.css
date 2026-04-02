@@ -1,0 +1,116 @@
+.drafts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.draft-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  transition: all var(--transition-base);
+}
+
+.draft-card:hover {
+  border-color: var(--color-primary-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.draft-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-base);
+}
+
+.draft-card-id {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+}
+
+.draft-card-modified {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+}
+
+.draft-card-patient {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  color: var(--color-text-dark);
+  margin-bottom: 4px;
+}
+
+.draft-card-product {
+  font-size: var(--fs-sm);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-base);
+}
+
+.draft-card-progress {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.draft-progress-circle {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.draft-progress-circle svg {
+  transform: rotate(-90deg);
+  width: 48px;
+  height: 48px;
+}
+
+.draft-progress-circle circle {
+  fill: none;
+  stroke-width: 3;
+  cx: 24;
+  cy: 24;
+  r: 20;
+}
+
+.draft-progress-circle .progress-bg {
+  stroke: var(--color-border);
+}
+
+.draft-progress-circle .progress-fill {
+  stroke: var(--color-primary);
+  stroke-linecap: round;
+  transition: stroke-dashoffset var(--transition-slow);
+}
+
+.draft-progress-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: var(--fw-semibold);
+  color: var(--color-primary);
+}
+
+.draft-progress-label {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+}
+
+.draft-progress-label strong {
+  color: var(--color-text-dark);
+  font-weight: var(--fw-medium);
+}
+
+.draft-card-actions {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.draft-card-actions .btn {
+  flex: 1;
+}

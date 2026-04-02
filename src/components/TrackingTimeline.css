@@ -1,0 +1,134 @@
+/* ── Vertical Timeline (Detail view) ── */
+.tracking-timeline-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: var(--space-base) 0;
+}
+
+.timeline-step {
+  display: flex;
+  gap: var(--space-base);
+  position: relative;
+}
+
+.timeline-step-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 24px;
+}
+
+.timeline-step-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-border);
+  border: 2px solid var(--color-border);
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.timeline-step-line {
+  width: 2px;
+  flex: 1;
+  background: var(--color-border);
+  min-height: 32px;
+}
+
+.timeline-step:last-child .timeline-step-line {
+  display: none;
+}
+
+.timeline-step.completed .timeline-step-dot {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.timeline-step.completed .timeline-step-line {
+  background: var(--color-primary);
+}
+
+.timeline-step.current .timeline-step-dot {
+  background: var(--color-surface);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(0, 51, 142, 0.15);
+}
+
+.timeline-step-content {
+  padding-bottom: var(--space-lg);
+  flex: 1;
+  min-height: 48px;
+}
+
+.timeline-step:last-child .timeline-step-content {
+  padding-bottom: 0;
+}
+
+.timeline-step-label {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-medium);
+  color: var(--color-text-muted);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.timeline-step.completed .timeline-step-label,
+.timeline-step.current .timeline-step-label {
+  color: var(--color-text-dark);
+}
+
+.timeline-step-desc {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+}
+
+/* ── Horizontal Timeline (Compact) ── */
+.tracking-timeline-horizontal {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+}
+
+.timeline-h-step {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.timeline-h-step:last-child {
+  flex: 0;
+}
+
+.timeline-h-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-border);
+  flex-shrink: 0;
+}
+
+.timeline-h-line {
+  height: 2px;
+  flex: 1;
+  background: var(--color-border);
+  margin: 0 2px;
+}
+
+.timeline-h-step.completed .timeline-h-dot {
+  background: var(--color-primary);
+}
+
+.timeline-h-step.completed .timeline-h-line {
+  background: var(--color-primary);
+}
+
+.timeline-h-step.current .timeline-h-dot {
+  background: var(--color-surface);
+  border: 2px solid var(--color-primary);
+  width: 10px;
+  height: 10px;
+  box-shadow: 0 0 0 2px rgba(0, 51, 142, 0.15);
+}

@@ -1,0 +1,33 @@
+.awareness-strip {
+  height: var(--awareness-height);
+  background: #FFF7F0;
+  border-bottom: 1px solid #FDDCBE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  font-size: var(--fs-sm);
+  color: #B35F1B;
+  padding: 0 var(--space-xl);
+}
+
+.awareness-strip svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.awareness-strip a {
+  color: #B35F1B;
+  font-weight: var(--fw-semibold);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.awareness-strip a:hover {
+  color: var(--color-accent);
+}
+
+.awareness-strip-hidden {
+  display: none;
+}

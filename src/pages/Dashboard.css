@@ -1,0 +1,140 @@
+.dashboard-welcome {
+  margin-bottom: var(--space-2xl);
+}
+
+.dashboard-welcome h1 {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-text-dark);
+  margin-bottom: var(--space-xs);
+}
+
+.dashboard-welcome p {
+  color: var(--color-text-muted);
+  font-size: var(--fs-base);
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-base);
+  margin-bottom: var(--space-2xl);
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: var(--space-xl);
+}
+
+.dashboard-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.dashboard-sidebar-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+/* Resume Drafts */
+.resume-drafts {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.resume-draft-card {
+  flex: 1;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-base);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.resume-draft-card:hover {
+  border-color: var(--color-primary-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.resume-draft-patient {
+  font-weight: var(--fw-medium);
+  color: var(--color-text-dark);
+  font-size: var(--fs-base);
+  margin-bottom: 4px;
+}
+
+.resume-draft-product {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.resume-draft-progress {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.resume-draft-progress .progress-bar {
+  flex: 1;
+}
+
+.resume-draft-progress span {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+/* Quick Actions */
+.quick-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.quick-action-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-base);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+  text-decoration: none;
+  color: inherit;
+}
+
+.quick-action-item:hover {
+  background: var(--color-bg);
+}
+
+.quick-action-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quick-action-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.quick-action-text {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-medium);
+  color: var(--color-text-dark);
+}
+
+.quick-action-text span {
+  display: block;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-regular);
+  color: var(--color-text-muted);
+}
